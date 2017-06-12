@@ -12,6 +12,8 @@
 		04094C8D1EEF057700DB5CC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04094C8B1EEF057700DB5CC0 /* Main.storyboard */; };
 		04094C8F1EEF057700DB5CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04094C8E1EEF057700DB5CC0 /* Assets.xcassets */; };
 		04094C921EEF057700DB5CC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04094C901EEF057700DB5CC0 /* LaunchScreen.storyboard */; };
+		04094CA01EEF08C400DB5CC0 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 04094C9E1EEF08C400DB5CC0 /* fonts */; };
+		04094CA11EEF08C400DB5CC0 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 04094C9F1EEF08C400DB5CC0 /* images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		04094C8E1EEF057700DB5CC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04094C911EEF057700DB5CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04094C931EEF057700DB5CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04094C9E1EEF08C400DB5CC0 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		04094C9F1EEF08C400DB5CC0 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		04094C861EEF057700DB5CC0 /* soSimons */ = {
 			isa = PBXGroup;
 			children = (
+				04094C9E1EEF08C400DB5CC0 /* fonts */,
+				04094C9F1EEF08C400DB5CC0 /* images */,
 				04094C871EEF057700DB5CC0 /* AppDelegate.swift */,
 				04094C891EEF057700DB5CC0 /* ViewController.swift */,
 				04094C8B1EEF057700DB5CC0 /* Main.storyboard */,
+				04094C991EEF062800DB5CC0 /* New Group */,
+			);
+			path = soSimons;
+			sourceTree = "<group>";
+		};
+		04094C991EEF062800DB5CC0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
 				04094C8E1EEF057700DB5CC0 /* Assets.xcassets */,
 				04094C901EEF057700DB5CC0 /* LaunchScreen.storyboard */,
 				04094C931EEF057700DB5CC0 /* Info.plist */,
 			);
-			path = soSimons;
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +137,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04094CA11EEF08C400DB5CC0 /* images in Resources */,
 				04094C921EEF057700DB5CC0 /* LaunchScreen.storyboard in Resources */,
 				04094C8F1EEF057700DB5CC0 /* Assets.xcassets in Resources */,
 				04094C8D1EEF057700DB5CC0 /* Main.storyboard in Resources */,
+				04094CA01EEF08C400DB5CC0 /* fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
