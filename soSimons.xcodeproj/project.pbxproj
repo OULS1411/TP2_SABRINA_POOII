@@ -63,19 +63,19 @@
 				04094C871EEF057700DB5CC0 /* AppDelegate.swift */,
 				04094C891EEF057700DB5CC0 /* ViewController.swift */,
 				04094C8B1EEF057700DB5CC0 /* Main.storyboard */,
-				04094C991EEF062800DB5CC0 /* New Group */,
+				04094C991EEF062800DB5CC0 /*  Support */,
 			);
 			path = soSimons;
 			sourceTree = "<group>";
 		};
-		04094C991EEF062800DB5CC0 /* New Group */ = {
+		04094C991EEF062800DB5CC0 /*  Support */ = {
 			isa = PBXGroup;
 			children = (
 				04094C8E1EEF057700DB5CC0 /* Assets.xcassets */,
 				04094C901EEF057700DB5CC0 /* LaunchScreen.storyboard */,
 				04094C931EEF057700DB5CC0 /* Info.plist */,
 			);
-			name = "New Group";
+			name = " Support";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
