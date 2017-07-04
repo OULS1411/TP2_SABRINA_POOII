@@ -27,11 +27,18 @@ class GameController: UIViewController {
         //--------
         addRandomButtonToArray()
         //--------
+        //Apelle la methode "startGame" avec argument "arrOfRandomButtons"
+        simoneBrain.startGame(arrOfRandomButtons)
+        //--------
+        //initialise "scoreKeeper" avec les propriete ordinée "scoreKeeper"
+        scoreKeeper.text = simoneBrain.scoreKeeper
     }
     //------------------------------------------
     func addRandomButtonToArray(){
     //--------------
-        let randomIndex = simoneBrain.getRandomNumber(from: 0, to: arrOfButtons.count )
+        let randomIndex = simoneBrain.getRandomNumber(from: 0, to: arrOfButtons.count - 1 )
+        //s'assurer que les valeurs seront entre 0 et 8
+        
         arrOfRandomButtons.append(arrOfButtons[randomIndex])
     }
     //------------------------------------------
