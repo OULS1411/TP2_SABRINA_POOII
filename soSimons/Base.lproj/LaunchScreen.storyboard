@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="width" secondItem="Oad-J1-Gy2" secondAttribute="height" multiplier="512:225" id="ZVV-Eg-Vx4"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_120.png" translatesAutoresizingMaskIntoConstraints="NO" id="alk-Hs-Pk2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="120.png" translatesAutoresizingMaskIntoConstraints="NO" id="alk-Hs-Pk2">
                                 <rect key="frame" x="130" y="194" width="115" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -47,7 +47,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_120.png" width="120" height="120"/>
+        <image name="120.png" width="120" height="120"/>
         <image name="simone.png" width="512" height="225"/>
     </resources>
 </document>

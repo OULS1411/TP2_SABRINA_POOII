@@ -4,12 +4,19 @@ import UIKit
 //============================================================
 class SimoneBrain {
     //------------------
-    var colorTracker: Int!
-     var userTurnToplay: Bool!
-     var scoreKeeperCounter: Int!
-     var theScoreKeeper = ""
-     var randomButtonChooser: UIButton!
+    var gameColors: [UIButton]!
+    var colorIndex: Int!
+    var arrRandomColors:[UIButton] = []
+    var userTurnToPlay: Bool!
+    var scoreTracker = ""
+    var colorToHighlight: UIButton!
+    var arrCopyOfRandomColorsToCompare: [UIButton]!
+    var scoreKeeperCounter: Int!
     //---------------------
+    init(gameColors: [UIButton]){
+    self.gameColors = gameColors
+    }
+    //-------------------------------------
     func getRandomNumber(from f :Int, to t:Int) -> Int{
         let from = UInt32(f)
         let to = UInt32(t)
@@ -17,39 +24,32 @@ class SimoneBrain {
         return Int(randomNumber)
     }
     //-------------------------------------
-    func startGame(_ arrOfRandomButtons:[UIButton]){
+    func startGame(){
     //initialise colorTracker à 0 
-        colorTracker = 0
-    //-----------
+        colorIndex = 0
+    
     //timer 1 pour executer methode "buttonAlphaManager" avec argument "arrOfRandomButtons"
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: false){_ in self.buttonAlphaManager(arrOfRandomButtons)
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: false){_ in self.gameColorsToHighlightManager()
         }
-    //-----------
     }
     //-------------------------------------
-    func buttonAlphaManager(_ arrOfRandomButtons:[UIButton]){
-        if colorTracker < arrOfRandomButtons.count{
-            //-----------
-            userTurnToplay = false
-            scoreKeeperCounter = 0
+    func gameColorsToHighlightManager(){
+        if colorIndex < arrRandomColors.count {
+            userTurnToPlay = false
             scoreKeeper = ""
-            randomButtonChooser = arrOfRandomButtons [colorTracker]
-            randomButtonChooser.alpha = 0.2 
-            colorTracker! += 1
-            //-----------
-            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in self.resetAlphaForButton(arrOfRandomButtons)}
+            colorToHighlight = arrRandomColors[colorIndex]
+            colorToHighlight.alpha = 0.2
+            colorIndex! += 1
+            scoreKeeperCounter = 0
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in self.resetAlphaForColors()}
             } else {
-                userTurnToplay = true
+                userTurnToPlay = true
             }
         }
-    
     //-------------------------------------
-    func resetAlphaForButton(_ arrOfRandomButtons:[UIButton]){
-        //-----------
-        randomButtonChooser.alpha = 1.0
-        //-----------
-        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in self.buttonAlphaManager(arrOfRandomButtons)
-        
+    func resetAlphaForColors( ){
+        colorToHighlight.alpha = 1.0
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in self.gameColorsToHighlightManager()
             }
     }
      //-------------------------------------
@@ -57,14 +57,38 @@ class SimoneBrain {
        //get = retourne la valeur de la variable "theScoreKeeper"
       // set = initialise la variable a la nouvelle valeur
             get {
-                return theScoreKeeper
+                return scoreTracker
             }
             set {
-            theScoreKeeper = newValue!
+            scoreTracker = newValue!
                 
             }
         }
      //-------------------------------------
+    func verification (_ aButton: UIButton) -> Bool {
+        if arrCopyOfRandomColorsToCompare[0] == aButton {
+            arrCopyOfRandomColorsToCompare.removeFirst()
+            if arrCopyOfRandomColorsToCompare.count == 0 {
+                colorIndex = 0
+                addRandomColorToArray()
+                Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false){_ in self.gameColorsToHighlightManager()
+                }
+            }
+            return true
+        }else {
+            return false
+        }
+    }
+    //-------------------------------------
+    func addRandomColorToArray(){
+    let randomIndex = getRandomNumber(from: 0, to: gameColors.count - 1)
+    arrRandomColors.append(gameColors[randomIndex])
+    }
+    //-------------------------------------
+    func loadArrayForComparison(){
+        arrCopyOfRandomColorsToCompare = arrRandomColors
+    }
+    //-------------------------------------
 
 //============================================================
-}
+}//end class SimoneBrain
