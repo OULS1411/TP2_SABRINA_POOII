@@ -6,7 +6,7 @@ class StartController: UIViewController {
     //------------------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
-       //------------------
+        SingletonShared.SingletonSharedInstance.manageScore()
         highscoreLabel.text = "HIGHSCORE : \(SingletonShared.SingletonSharedInstance.highscore!)"
     }
    //-------------------------------------------

@@ -9,8 +9,8 @@ class SingletonShared {
     //------------------------------------------
     init() {
     
-    //savedHighScore.removeObject(forKey: "score")
-    manageScore()
+     //savedHighScore.removeObject(forKey: "score")
+     manageScore()
     }
     
     //------------------------------------------
