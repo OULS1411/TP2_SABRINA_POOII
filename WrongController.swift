@@ -3,14 +3,16 @@ import UIKit
 //============================================================
 class WrongController: UIViewController {
     //------------------------------------------
+    @IBOutlet weak var scoreLabel: UILabel!
+    //------------------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        scoreLabel.text = SingletonShared.SingletonSharedInstance.scoreForWrongInterface
     }
     //------------------------------------------
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     //============================================================
     
