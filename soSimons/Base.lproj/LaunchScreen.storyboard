@@ -23,21 +23,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simone.png" translatesAutoresizingMaskIntoConstraints="NO" id="Oad-J1-Gy2">
-                                <rect key="frame" x="74.5" y="58" width="225" height="98.5"/>
+                                <rect key="frame" x="75" y="103" width="225" height="99"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="225" id="Hzg-eA-TkE"/>
-                                    <constraint firstAttribute="width" secondItem="Oad-J1-Gy2" secondAttribute="height" multiplier="512:225" id="ZVV-Eg-Vx4"/>
+                                    <constraint firstAttribute="width" secondItem="Oad-J1-Gy2" secondAttribute="height" multiplier="25:11" id="ZVV-Eg-Vx4"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="120.png" translatesAutoresizingMaskIntoConstraints="NO" id="alk-Hs-Pk2">
-                                <rect key="frame" x="130" y="194" width="115" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="hiK-AX-pe8">
+                                <rect key="frame" x="140" y="210" width="94" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="Eog-AT-2hK"/>
+                                    <constraint firstAttribute="width" secondItem="hiK-AX-pe8" secondAttribute="height" multiplier="1:1" id="G5o-BS-XZY"/>
+                                    <constraint firstAttribute="width" constant="94" id="SAv-Dv-XZd"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Oad-J1-Gy2" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="38" id="G4u-Wl-fJ6"/>
+                            <constraint firstItem="hiK-AX-pe8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1IB-7H-bDj"/>
+                            <constraint firstItem="Oad-J1-Gy2" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="83" id="G4u-Wl-fJ6"/>
                             <constraint firstItem="Oad-J1-Gy2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ekc-A5-3SE"/>
+                            <constraint firstItem="hiK-AX-pe8" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="190" id="oK6-cn-Bth"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -47,7 +53,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="120.png" width="120" height="120"/>
+        <image name="1024.png" width="1024" height="1024"/>
         <image name="simone.png" width="512" height="225"/>
     </resources>
 </document>
