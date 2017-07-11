@@ -51,9 +51,9 @@ class SimoneBrain {
             Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true){_ in self.timerLabel.text = "YOUR TURN : \(sec) s"
                 if sec == 0 {
                 self.aTimer.invalidate()
+                    SingletonShared.SingletonSharedInstance.saveScore(String(self.arrRandomColors.count - 1))
                 }
                 sec -= 1
-                
             }
         }
     }

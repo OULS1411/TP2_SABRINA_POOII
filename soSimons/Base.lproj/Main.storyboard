@@ -90,8 +90,12 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vl8-JD-hXU">
-                                <rect key="frame" x="131.66666666666669" y="645" width="151.00000000000006" height="34"/>
+                                <rect key="frame" x="129.33333333333331" y="645.66666666666663" width="155.99999999999994" height="33"/>
+                                <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="18"/>
                                 <state key="normal" title="marioGENAU.COM"/>
+                                <connections>
+                                    <action selector="goTowebPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yS1-K5-Lz4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
