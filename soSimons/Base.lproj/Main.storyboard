@@ -53,19 +53,23 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cgB-kx-3am">
-                                <rect key="frame" x="98" y="294" width="218" height="148"/>
+                                <rect key="frame" x="76" y="275.33333333333331" width="262.33333333333331" height="186"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGHSCORE : 13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="mAf-rl-6Hi">
-                                        <rect key="frame" x="0.0" y="0.0" width="218" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="262.33333333333331" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="ANd-9j-A7u"/>
+                                            <constraint firstAttribute="width" constant="262.5" id="Kd5-L2-pvc"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="28"/>
                                         <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3U5-Fu-NHL">
-                                        <rect key="frame" x="7" y="42" width="204" height="48"/>
+                                        <rect key="frame" x="0.0" y="66" width="262.33333333333331" height="55"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="YEk-qa-ghE"/>
-                                            <constraint firstAttribute="width" constant="204" id="jJR-k1-KMp"/>
+                                            <constraint firstAttribute="height" constant="55" id="YEk-qa-ghE"/>
+                                            <constraint firstAttribute="width" constant="262.5" id="jJR-k1-KMp"/>
                                         </constraints>
                                         <state key="normal" image="play.png"/>
                                         <connections>
@@ -73,30 +77,29 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgF-HB-S2p">
-                                        <rect key="frame" x="7" y="100" width="204" height="48"/>
+                                        <rect key="frame" x="0.0" y="131" width="262.33333333333331" height="55"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="204" id="2zQ-55-bBP"/>
-                                            <constraint firstAttribute="height" constant="48" id="Act-KG-LbP"/>
+                                            <constraint firstAttribute="width" constant="262" id="2zQ-55-bBP"/>
+                                            <constraint firstAttribute="height" constant="55" id="Act-KG-LbP"/>
                                         </constraints>
                                         <state key="normal" image="reset.png"/>
+                                        <connections>
+                                            <action selector="resetHighscore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sMt-BR-0Px"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vl8-JD-hXU">
-                                <rect key="frame" x="113" y="668" width="204" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="Bn4-dJ-Dxv"/>
-                                    <constraint firstAttribute="width" constant="204" id="djt-v4-UPP"/>
-                                </constraints>
+                                <rect key="frame" x="131.66666666666669" y="645" width="151.00000000000006" height="34"/>
                                 <state key="normal" title="marioGENAU.COM"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Vl8-JD-hXU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="93" id="AjM-By-ZYE"/>
+                            <constraint firstItem="Vl8-JD-hXU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="27K-8a-VWc"/>
                             <constraint firstItem="F2b-Ha-j44" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="G9x-dk-5AD"/>
                             <constraint firstItem="F2b-Ha-j44" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L0Y-YU-rYe"/>
-                            <constraint firstAttribute="bottom" secondItem="Vl8-JD-hXU" secondAttribute="bottom" constant="20" symbolic="YES" id="Yr9-P1-1FJ"/>
+                            <constraint firstItem="Vl8-JD-hXU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="294" id="Ph5-D6-54w"/>
                             <constraint firstItem="cgB-kx-3am" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="l1e-sX-1Jq"/>
                             <constraint firstItem="F2b-Ha-j44" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-2" id="o34-cZ-hCi"/>
                             <constraint firstItem="cgB-kx-3am" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v3U-W9-QSF"/>
@@ -387,7 +390,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nnY-V2-tMd">
-                                <rect key="frame" x="105" y="297" width="204" height="143"/>
+                                <rect key="frame" x="105" y="297.33333333333331" width="204" height="143"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE : 13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttz-kh-kw6">
                                         <rect key="frame" x="0.0" y="0.0" width="204" height="27"/>
