@@ -10,8 +10,7 @@ class StartController: UIViewController {
         highscoreLabel.text = "HIGHSCORE : \(String(describing: savedScore))"
         
         
-//        SingletonShared.SingletonSharedInstance.manageScore()
-//        highscoreLabel.text = "HIGHSCORE : \(SingletonShared.SingletonSharedInstance.highscore!)"
+
     }
    //-------------------------------------------
     override func didReceiveMemoryWarning() {

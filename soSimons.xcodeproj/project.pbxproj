@@ -10,8 +10,7 @@
 		04094C881EEF057700DB5CC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04094C871EEF057700DB5CC0 /* AppDelegate.swift */; };
 		04094C8A1EEF057700DB5CC0 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04094C891EEF057700DB5CC0 /* StartController.swift */; };
 		04094C8F1EEF057700DB5CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04094C8E1EEF057700DB5CC0 /* Assets.xcassets */; };
-		04094CA01EEF08C400DB5CC0 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 04094C9E1EEF08C400DB5CC0 /* fonts */; };
-		04094CA11EEF08C400DB5CC0 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 04094C9F1EEF08C400DB5CC0 /* images */; };
+		048A96851F17F6FF00557D6B /* Beatles Light Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 048A96841F17F6FF00557D6B /* Beatles Light Light.ttf */; };
 		049DC1871F0AED0D0090F277 /* b2.png in Resources */ = {isa = PBXBuildFile; fileRef = 049DC17D1F0AED0D0090F277 /* b2.png */; };
 		049DC1881F0AED0D0090F277 /* b8.png in Resources */ = {isa = PBXBuildFile; fileRef = 049DC17E1F0AED0D0090F277 /* b8.png */; };
 		049DC1891F0AED0D0090F277 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 049DC17F1F0AED0D0090F277 /* bar.png */; };
@@ -53,8 +52,7 @@
 		04094C891EEF057700DB5CC0 /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
 		04094C8E1EEF057700DB5CC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04094C931EEF057700DB5CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04094C9E1EEF08C400DB5CC0 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
-		04094C9F1EEF08C400DB5CC0 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		048A96841F17F6FF00557D6B /* Beatles Light Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Beatles Light Light.ttf"; sourceTree = "<group>"; };
 		049DC17D1F0AED0D0090F277 /* b2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b2.png; path = images/b2.png; sourceTree = "<group>"; };
 		049DC17E1F0AED0D0090F277 /* b8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b8.png; path = images/b8.png; sourceTree = "<group>"; };
 		049DC17F1F0AED0D0090F277 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar.png; path = images/bar.png; sourceTree = "<group>"; };
@@ -120,19 +118,9 @@
 		04094C861EEF057700DB5CC0 /* soSimons */ = {
 			isa = PBXGroup;
 			children = (
+				048A96831F17F6EE00557D6B /* fonts */,
 				04B8752B1F14243700821565 /* icons */,
-				049DC17D1F0AED0D0090F277 /* b2.png */,
-				049DC17E1F0AED0D0090F277 /* b8.png */,
-				049DC17F1F0AED0D0090F277 /* bar.png */,
-				049DC1801F0AED0D0090F277 /* high.png */,
-				049DC1811F0AED0D0090F277 /* icon_120.png */,
-				049DC1821F0AED0D0090F277 /* new.png */,
-				049DC1831F0AED0D0090F277 /* play.png */,
-				049DC1841F0AED0D0090F277 /* reset.png */,
-				049DC1851F0AED0D0090F277 /* ring.png */,
-				049DC1861F0AED0D0090F277 /* simone.png */,
-				04094C9E1EEF08C400DB5CC0 /* fonts */,
-				04094C9F1EEF08C400DB5CC0 /* images */,
+				048A96821F17F64100557D6B /* images */,
 				04CC97661EF3092B00D1193C /* Main.storyboard */,
 				04E05BC51F0AC1BE0017EE5B /* WrongController.swift */,
 				04E05BC71F0AC2200017EE5B /* SimoneBrain.swift */,
@@ -153,6 +141,31 @@
 				04B875281F1422F100821565 /* LaunchScreen.storyboard */,
 			);
 			name = " Support";
+			sourceTree = "<group>";
+		};
+		048A96821F17F64100557D6B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				049DC17D1F0AED0D0090F277 /* b2.png */,
+				049DC17E1F0AED0D0090F277 /* b8.png */,
+				049DC17F1F0AED0D0090F277 /* bar.png */,
+				049DC1801F0AED0D0090F277 /* high.png */,
+				049DC1811F0AED0D0090F277 /* icon_120.png */,
+				049DC1821F0AED0D0090F277 /* new.png */,
+				049DC1831F0AED0D0090F277 /* play.png */,
+				049DC1841F0AED0D0090F277 /* reset.png */,
+				049DC1851F0AED0D0090F277 /* ring.png */,
+				049DC1861F0AED0D0090F277 /* simone.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		048A96831F17F6EE00557D6B /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				048A96841F17F6FF00557D6B /* Beatles Light Light.ttf */,
+			);
+			name = fonts;
 			sourceTree = "<group>";
 		};
 		04B8752B1F14243700821565 /* icons */ = {
@@ -241,7 +254,7 @@
 				04B8754A1F14244800821565 /* 172.png in Resources */,
 				04B875461F14244800821565 /* 87.png in Resources */,
 				04B8753E1F14244800821565 /* 29.png in Resources */,
-				04094CA11EEF08C400DB5CC0 /* images in Resources */,
+				048A96851F17F6FF00557D6B /* Beatles Light Light.ttf in Resources */,
 				04B8754B1F14244800821565 /* 180.png in Resources */,
 				04B875471F14244800821565 /* 120.png in Resources */,
 				049DC1871F0AED0D0090F277 /* b2.png in Resources */,
@@ -267,7 +280,6 @@
 				04B8754C1F14244800821565 /* 196.png in Resources */,
 				049DC18B1F0AED0D0090F277 /* icon_120.png in Resources */,
 				049DC1881F0AED0D0090F277 /* b8.png in Resources */,
-				04094CA01EEF08C400DB5CC0 /* fonts in Resources */,
 				049DC1891F0AED0D0090F277 /* bar.png in Resources */,
 				049DC18F1F0AED0D0090F277 /* ring.png in Resources */,
 			);

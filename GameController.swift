@@ -12,12 +12,12 @@ class GameController: UIViewController {
     @IBOutlet weak var but8: UIButton!
     @IBOutlet weak var but9: UIButton!
     @IBOutlet weak var scoreKeeper: UILabel!
+    @IBOutlet weak var timerLabel: UILabel!
     var arrOfGameColors: [UIButton]!
     var simoneBrain: SimoneBrain!
     var aTimer: Timer!
     //------------------------------------------
-    @IBOutlet weak var timerLabel: UILabel!
-    //------------------------------------------
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         arrOfGameColors = [but1,but2, but3, but4, but5, but6, but7, but8, but9]
@@ -33,7 +33,6 @@ class GameController: UIViewController {
                 self.aTimer.invalidate()
             }
         }
-        
     }
     //------------------------------------------
     override func didReceiveMemoryWarning() {
@@ -42,7 +41,14 @@ class GameController: UIViewController {
     }
     //============================================================
     @IBAction func buttonManager(_ sender: UIButton) {
-        if !simoneBrain.userTurnToPlay{
+        
+        if simoneBrain.aTimer == nil || simoneBrain.userTurnToPlay == nil {
+            return
+        }
+        simoneBrain.aTimer.invalidate()
+        timerLabel.text = ""
+        
+        if !simoneBrain.userTurnToPlay {
             return
         }
         if simoneBrain.arrCopyOfRandomColorsToCompare.count == 0 {
@@ -51,8 +57,8 @@ class GameController: UIViewController {
         if !simoneBrain.verification(arrOfGameColors[sender.tag]) {
             let theScore = simoneBrain.arrRandomColors.count - 1
             let forWrongDisplay = "SCORE : \(theScore)"
-            SingletonShared.SingletonSharedInstance.scoreForWrongInterface = "\(forWrongDisplay)"
             SingletonShared.SingletonSharedInstance.saveScore(String(theScore))
+            SingletonShared.SingletonSharedInstance.scoreForWrongInterface = "\(forWrongDisplay)"
             performSegue(withIdentifier: "wrong", sender: nil)
         }
             simoneBrain.scoreKeeperCounter! += 1

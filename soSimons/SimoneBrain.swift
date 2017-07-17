@@ -16,7 +16,7 @@ class SimoneBrain {
     var aTimer: Timer!
     //---------------------
     init(gameColors: [UIButton],timerLabel: UILabel){
-    self.gameColors = gameColors
+        self.gameColors = gameColors
         self.timerLabel = timerLabel
     }
     //-------------------------------------
@@ -45,13 +45,15 @@ class SimoneBrain {
             colorIndex! += 1
             scoreKeeperCounter = 0
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in self.resetAlphaForColors()}
-            } else {
-                userTurnToPlay = true
+            }
+        else {
+            userTurnToPlay = true
             var sec = 30
-            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true){_ in self.timerLabel.text = "YOUR TURN : \(sec) s"
+            aTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true){_ in
+                self.timerLabel.text = "YOUR TURN : \(sec) s"
                 if sec == 0 {
                 self.aTimer.invalidate()
-                    SingletonShared.SingletonSharedInstance.saveScore(String(self.arrRandomColors.count - 1))
+                    //SingletonShared.SingletonSharedInstance.saveScore(String(self.arrRandomColors.count - 1))
                 }
                 sec -= 1
             }
