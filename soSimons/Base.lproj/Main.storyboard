@@ -306,24 +306,24 @@
                                 <rect key="frame" x="37.5" y="117" width="300" height="300"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Oga-Cl-KMk">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="93"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="93.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctL-tH-xqZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="93.5" height="93"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="93.5" height="93.5"/>
                                                 <state key="normal" image="b8.png"/>
                                                 <connections>
                                                     <action selector="buttonManager:" destination="xOP-0F-Eci" eventType="touchUpInside" id="CuC-yQ-L1U"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6P-mf-g9G">
-                                                <rect key="frame" x="103.5" y="0.0" width="93" height="93"/>
+                                                <rect key="frame" x="103.5" y="0.0" width="93" height="93.5"/>
                                                 <state key="normal" image="b2.png"/>
                                                 <connections>
                                                     <action selector="buttonManager:" destination="xOP-0F-Eci" eventType="touchUpInside" id="aNa-ak-x6O"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqE-YM-FKQ">
-                                                <rect key="frame" x="206.5" y="0.0" width="93.5" height="93"/>
+                                                <rect key="frame" x="206.5" y="0.0" width="93.5" height="93.5"/>
                                                 <state key="normal" image="b8.png"/>
                                                 <connections>
                                                     <action selector="buttonManager:" destination="xOP-0F-Eci" eventType="touchUpInside" id="5K5-Jr-ghj"/>
@@ -332,24 +332,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ik9-2O-FXO">
-                                        <rect key="frame" x="0.0" y="103" width="300" height="93.5"/>
+                                        <rect key="frame" x="0.0" y="103.5" width="300" height="93"/>
                                         <subviews>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nj2-0C-SGM">
-                                                <rect key="frame" x="0.0" y="0.0" width="93.5" height="93.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="93.5" height="93"/>
                                                 <state key="normal" image="b2.png"/>
                                                 <connections>
                                                     <action selector="buttonManager:" destination="xOP-0F-Eci" eventType="touchUpInside" id="L2T-d6-6uF"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhH-49-4oo">
-                                                <rect key="frame" x="103.5" y="0.0" width="93" height="93.5"/>
+                                                <rect key="frame" x="103.5" y="0.0" width="93" height="93"/>
                                                 <state key="normal" image="b2.png"/>
                                                 <connections>
                                                     <action selector="buttonManager:" destination="xOP-0F-Eci" eventType="touchUpInside" id="Zg3-87-k0G"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ab4-j4-lEr">
-                                                <rect key="frame" x="206.5" y="0.0" width="93.5" height="93.5"/>
+                                                <rect key="frame" x="206.5" y="0.0" width="93.5" height="93"/>
                                                 <state key="normal" image="b2.png"/>
                                                 <connections>
                                                     <action selector="buttonManager:" destination="xOP-0F-Eci" eventType="touchUpInside" id="b0i-nB-u08"/>
@@ -461,7 +461,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR TURN  : 24s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TTQ-ao-SG0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TTQ-ao-SG0">
                                 <rect key="frame" x="16" y="610" width="343" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="klf-ER-hMY">

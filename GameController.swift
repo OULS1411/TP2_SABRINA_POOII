@@ -17,7 +17,6 @@ class GameController: UIViewController {
     var simoneBrain: SimoneBrain!
     var aTimer: Timer!
     //------------------------------------------
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         arrOfGameColors = [but1,but2, but3, but4, but5, but6, but7, but8, but9]
@@ -37,7 +36,6 @@ class GameController: UIViewController {
     //------------------------------------------
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     //============================================================
     @IBAction func buttonManager(_ sender: UIButton) {

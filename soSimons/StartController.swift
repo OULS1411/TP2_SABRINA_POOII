@@ -8,9 +8,6 @@ class StartController: UIViewController {
         super.viewDidLoad()
         let savedScore = SingletonShared.SingletonSharedInstance.savedHighScore.object(forKey: "score")!
         highscoreLabel.text = "HIGHSCORE : \(String(describing: savedScore))"
-        
-        
-
     }
    //-------------------------------------------
     override func didReceiveMemoryWarning() {

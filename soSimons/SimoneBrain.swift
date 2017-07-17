@@ -28,10 +28,7 @@ class SimoneBrain {
     }
     //-------------------------------------
     func startGame(){
-    //initialise colorTracker à 0 
         colorIndex = 0
-    
-    //timer 1 pour executer methode "buttonAlphaManager" avec argument "arrOfRandomButtons"
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false){_ in self.gameColorsToHighlightManager()
         }
     }
@@ -53,13 +50,14 @@ class SimoneBrain {
                 self.timerLabel.text = "YOUR TURN : \(sec) s"
                 if sec == 0 {
                 self.aTimer.invalidate()
-                    //SingletonShared.SingletonSharedInstance.saveScore(String(self.arrRandomColors.count - 1))
+                   
                 }
                 sec -= 1
             }
         }
     }
     //-------------------------------------
+    
     func resetAlphaForColors( ){
         colorToHighlight.alpha = 1.0
         Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in self.gameColorsToHighlightManager()
